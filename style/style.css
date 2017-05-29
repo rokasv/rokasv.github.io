@@ -1,74 +1,46 @@
 body
 { 
   font: normal .80em 'trebuchet ms', arial, sans-serif;
-  background: #EBEBEA;
+  background: #39262e;
   color: #000;
 }
 
-#site_content
-{ 
-  max-width: 710px;
-  margin: 0 auto 0 auto;
-  background: #fff;
-} 
-
-#main
-{ 
-  padding: 0 20px 20px 20px;
-} 
-
-.round_up
+#frame
 {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  /*127x61 x3*/
+  width: 381px;
+  height: 183px;
+  background: url('frame.png') no-repeat center center ;
+
+  position: absolute;
+  left: calc(50vw - 190.5px);
+  top: calc(50vh - 91.5px);
+
+  /*NN scaling*/
+  background-size: cover;         /* Generic*/
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  image-rendering: crisp-edges;
 }
 
-.round_down
+#frame div
 {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  width: 59%;
+  color: #e3b184;
+  font-family: 'munro';
+  font-size: 30px;
+  font-weight: normal;
+
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-.ribbon
-{
-  text-align: center;
-  background-color: #2F2F34;
-  display: inline-block;
-  width: 100%;
+@font-face {
+    font-family: 'munro';
+    src: url('font.ttf');
 }
-
-p
-{ 
-  padding: 0 0 20px 0;
-  line-height: 1.5em;
-  text-align: justify;
-}
-
-ul 
-{
-  display: inline-block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li 
-{
-    float: left;
-}
-
-li a 
-{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-li a:hover 
-{
-    background-color: #797576;
-}
-
