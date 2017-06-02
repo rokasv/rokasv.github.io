@@ -1,16 +1,19 @@
-body
+.default_body
 { 
-  font: normal .80em 'trebuchet ms', arial, sans-serif;
-  background: #39262e;
-  color: #000;
+  background: #42412d;
 }
 
-#frame
+.thornwood_body
+{ 
+  background: #39262e;
+}
+
+#frame_thornwood
 {
   /*127x61 x3*/
   width: 381px;
   height: 183px;
-  background: url('frame.png') no-repeat center center ;
+  background: url('frame_thornwood.png') no-repeat center center ;
 
   position: absolute;
   left: calc(50vw - 190.5px);
@@ -27,10 +30,41 @@ body
   image-rendering: crisp-edges;
 }
 
-#frame div
+#frame_default
+{
+  /*107x45 x3*/
+  width: 321px;
+  height: 135px;
+  background: url('frame_default.png') no-repeat center center ;
+
+  position: absolute;
+  left: calc(50vw - 160.5px);
+  top: calc(50vh - 91.5px);
+
+  /*NN scaling*/
+  background-size: cover;         /* Generic*/
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  image-rendering: crisp-edges;
+}
+
+#frame_thornwood div
+{
+  color: #e3b184;
+}
+
+#frame_default div
+{
+  color: #8f906e;
+}
+
+.frame div
 {
   width: 59%;
-  color: #e3b184;
   font-family: 'munro';
   font-size: 30px;
   font-weight: normal;
