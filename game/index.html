@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 	<meta charset="utf-8" />
-	<title>Seek Etyliv</title>
+	<title>Etyliv</title>
 	
 	<style type="text/css">
 		body {
@@ -243,7 +243,7 @@
 				})();
 			}
 
-			if (false) { // debugging enabled
+			if (true) { // debugging enabled
 				(function() {
 					var outputToggleLabel = document.getElementById("display-output");
 					var outputToggle = document.getElementById("output-toggle");
@@ -366,15 +366,15 @@
 		Presentation.setStatus("Downloading...");
 
 	//]]></script>
-	<script type="text/javascript" src="indexfs.js"></script>
+	<script type="text/javascript" src="aaaaafs.js"></script>
 	<script>
 		(function() {
 			var script = document.createElement('script');
-			script.src = "index.asm.js";
+			script.src = "aaaaa.asm.js";
 			script.onload = function() {
 				setTimeout(function() {
 					(function() {
-						var memoryInitializer = 'index.mem';
+						var memoryInitializer = 'aaaaa.mem';
 						if (typeof Module.locateFile === 'function') {
 							memoryInitializer = Module.locateFile(memoryInitializer);
 						} else if (Module.memoryInitializerPrefixURL) {
@@ -387,7 +387,7 @@
 					})();
 
 					var script = document.createElement('script');
-					script.src = "index.js";
+					script.src = "aaaaa.js";
 					document.body.appendChild(script);
 				}, 1); // delaying even 1ms is enough to allow compilation memory to be reclaimed
 			};
