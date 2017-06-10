@@ -175,7 +175,7 @@
 </head>
 <body>
 	<div id="container">
-		<canvas id="canvas" width="157" height="95" onclick="canvas.ownerDocument.defaultView.focus();" oncontextmenu="event.preventDefault();">
+		<canvas id="canvas" width="327" height="141" onclick="canvas.ownerDocument.defaultView.focus();" oncontextmenu="event.preventDefault();">
 			HTML5 canvas appears to be unsupported in the current browser.<br />Please try updating or use a different browser.
 		</canvas>
 		<div id="status-container">
@@ -366,15 +366,15 @@
 		Presentation.setStatus("Downloading...");
 
 	//]]></script>
-	<script type="text/javascript" src="aaaafs.js"></script>
+	<script type="text/javascript" src="indexfs.js"></script>
 	<script>
 		(function() {
 			var script = document.createElement('script');
-			script.src = "aaaa.asm.js";
+			script.src = "index.asm.js";
 			script.onload = function() {
 				setTimeout(function() {
 					(function() {
-						var memoryInitializer = 'aaaa.mem';
+						var memoryInitializer = 'index.mem';
 						if (typeof Module.locateFile === 'function') {
 							memoryInitializer = Module.locateFile(memoryInitializer);
 						} else if (Module.memoryInitializerPrefixURL) {
@@ -387,7 +387,7 @@
 					})();
 
 					var script = document.createElement('script');
-					script.src = "aaaa.js";
+					script.src = "index.js";
 					document.body.appendChild(script);
 				}, 1); // delaying even 1ms is enough to allow compilation memory to be reclaimed
 			};
