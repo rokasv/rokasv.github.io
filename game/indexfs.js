@@ -101,11 +101,7 @@ function assert(check, msg) {
         this.requests[this.name] = null;
       },
     };
-<<<<<<< HEAD
       new DataRequest(0, 151709, 0, 0).open('GET', '/data.pck');
-=======
-      new DataRequest(0, 124165, 0, 0).open('GET', '/data.pck');
->>>>>>> a75fa7ac76c5c8acb31681ae5acd4b0db4c2b2a0
     var PACKAGE_PATH;
     if (typeof window === 'object') {
       PACKAGE_PATH = window['encodeURIComponent'](window.location.pathname.toString().substring(0, window.location.pathname.toString().lastIndexOf('/')) + '/');
